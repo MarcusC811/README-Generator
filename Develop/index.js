@@ -42,48 +42,53 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
+
 function writeToFile(fileName, answer) {
     const {Title, Description, installationInstructions, usageInformation, contributionGuidelines, testInstructions, license} = answer;
-
-    switch(license) {
-        case 'MIT':
-            return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
-            break;
-        case 'Other':
-            return 'Monday';
-            break;
-        case 'GPLv2':
-            return '[![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)';
-            break;
-        case 'Apache':
-            return '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
-            break;
-        default:
-            'N/A'
-    }
+ 
+    var licenseLogo = function (license){
+        let testText = '';
+        switch(license) {
+            case 'MIT':
+                return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
+                break;
+            case 'Other':
+                return 'Monday';
+                break;
+            case 'GPLv2':
+                return '[![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)';
+                break;
+            case 'Apache':
+                return '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
+                break;
+            default:
+                'N/A'
+        } return testText
+      }
     console.log(license);
-    console.log(fileName);
+    // console.log(fileName);
     let content = 
         `# Title
-        ${Title}
+${Title}
 
-        ## Description
-        ${Description}
+## Description
+${Description}
         
-        ## Installation Instructions
-        ${installationInstructions}
+## Installation Instructions
+${installationInstructions}
+       
+## Usage
+${usageInformation}
         
-        ## Usage
-        ${usageInformation}
+## Contribution Guidelines
+${contributionGuidelines}
         
-        ## Contribution Guidelines
-        ${contributionGuidelines}
+## Test Instructions
+${testInstructions}
         
-        ## Test Instructions
-        ${testInstructions}
-        
-        ## License
-        ${license}`
+## License
+ ${testText}`
+ 
     fs.writeFile('README.md', content, err => {
         if (err) {
           console.error(err);
