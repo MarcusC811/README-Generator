@@ -8,7 +8,7 @@ Welcome to my README generator, this project helps you with quickly generating a
 
 Below is a video showing a basic usage of this application.
 
-![ALT]()
+![Generator Walkthrough](https://app.castify.com/view/22f181dd-c54c-4d88-8847-8a3f9eeecd94)
 
 ## Requirements
 

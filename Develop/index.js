@@ -52,7 +52,7 @@ function writeToFile(fileName, answer) {
             case 'MIT':
                 return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
             case 'Other':
-                return 'Monday';
+                return 'Other';
             case 'GPLv2':
                 return '[![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)';
             case 'Apache':
