@@ -96,7 +96,7 @@ ${testInstructions}
     
 // TODO: Create a function to initialize app
 function init() {
-    const fileName = 'README.md'
+    const fileName = 'README2.md'
     Inquirer
         .prompt(questions)
         .then((answer) => 

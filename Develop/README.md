@@ -1,20 +1,18 @@
-# Title
-Marcus
+# README Generator
 
-## Description
-NA
-        
-## Installation Instructions
-NA
-       
+## Introduction
+
+Welcome to my README generator, this project helps you with quickly generating a readme file for you personal project with some base code you to start you up. 
+
 ## Usage
-NA
-        
-## Contribution Guidelines
-NA
-        
-## Test Instructions
-NA
-        
-## License
- [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+Below is a video showing a basic usage of this application.
+
+![ALT]()
+
+## Requirements
+
+* NODEJS
+
+* IDE (VS Code is what is used in the video)
+
